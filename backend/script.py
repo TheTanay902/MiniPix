@@ -37,5 +37,5 @@ def compress(img):
     plt.show()
 
 
-image = cv2.cvtColor(cv2.imread('20221106_221213.jpg'), cv2.COLOR_BGR2RGB)
+image = cv2.cvtColor(cv2.imread('backend/20221106_221213.jpg'), cv2.COLOR_BGR2RGB)
 compress(image)
