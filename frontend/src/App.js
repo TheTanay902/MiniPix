@@ -1,10 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import HomeComponent from "./components/HomeComponent";
 
 function App() {
   return (
     <div className="App">
-      <h1>MINIPIX</h1>
+      <HomeComponent/>
     </div>
   );
 }
