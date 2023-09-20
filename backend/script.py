@@ -27,17 +27,14 @@ def compress(img):
 
     img_reduced= (cv2.merge((b_arr, g_arr, r_arr)))
 
-    return img_reduced
+    # return img_reduced
 
-    # fig = plt.figure(figsize = (10, 7.2)) 
-    # fig.add_subplot(121)
-    # plt.title("Original Image")
-    # plt.imshow(img)
-    # fig.add_subplot(122)
-    # plt.title("Reduced Image")
-    # plt.imshow(img_reduced)
-    # plt.show()
+    fig = plt.figure(figsize = (10, 7.2)) 
+    plt.imshow(img_reduced)
+    plt.axis('off')
+    plt.savefig('reduced.jpg',bbox_inches='tight', pad_inches=0)
+    plt.show()
 
 
-# image = cv2.cvtColor(cv2.imread('20221106_221213.jpg'), cv2.COLOR_BGR2RGB)
-# compress(image)
+image = cv2.cvtColor(cv2.imread('backend/20221106_221213.jpg'), cv2.COLOR_BGR2RGB)
+compress(image)
