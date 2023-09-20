@@ -1,5 +1,5 @@
 import NavbarComponent from "./NavbarComponent";
-import UploadComponent from "./UploadComponent";
+import CompressComponent from "./CompressComponent";
 
 function HomeComponent(){
     return(
@@ -7,7 +7,7 @@ function HomeComponent(){
             <div className="">
                 <div>
                     <NavbarComponent/>
-                    <UploadComponent/>
+                    <CompressComponent/>
                 </div>
             </div>
         </div>
